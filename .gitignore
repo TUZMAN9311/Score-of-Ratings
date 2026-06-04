@@ -1,0 +1,28 @@
+# ---------- .NET / Visual Studio ----------
+[Bb]in/
+[Oo]bj/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.vs/
+.vscode/
+
+# ---------- Операционная система ----------
+# Linux
+.directory
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ---------- Разное / Кэш ----------
+*.suo
+*.ntvs*
+*.njsproj
+*.sln.docstates
+.mtvs/
