@@ -26,3 +26,4 @@ Desktop.ini
 *.njsproj
 *.sln.docstates
 .mtvs/
+*.keystore
