@@ -1,0 +1,1 @@
+Convenient calculator for quick grade point average calculation.
