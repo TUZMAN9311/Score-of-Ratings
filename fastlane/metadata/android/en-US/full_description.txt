@@ -1,0 +1,13 @@
+Score of Ratings is a simple and fast calculator for school and university students. It helps you instantly calculate your grade point average (GPA) and see your final grade right away — without extra math or stress.
+
+What's inside:
+
+Instant calculation: the app automatically calculates the arithmetic mean and the rounded grade.
+
+Clear feedback: add your grades and immediately see how the result changes — no complex formulas needed.
+
+Works everywhere: the interface adapts to any screen, from budget smartphones to flagships.
+
+Error protection: the app won't crash if you make an accidental typo — you will always get a correct result.
+
+Full privacy: no internet required, no registration needed. The app does not save any personal data.
