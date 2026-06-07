@@ -1,3 +1,4 @@
+Note: The application interface is currently available in Russian only.
 Score of Ratings is a simple and fast calculator for school and university students. It helps you instantly calculate your grade point average (GPA) and see your final grade right away — without extra math or stress.
 
 What's inside:
