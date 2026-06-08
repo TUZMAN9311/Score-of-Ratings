@@ -14,7 +14,7 @@ public partial class SecondPage : ContentPage
         }
         catch(Exception ex)
         {
-            await DisplayAlert("Упс!", "Не удалось открыть ссылку. Похоже, у вас в системе отключен или отсутствует браузер.", "ОК");
+            await DisplayAlertAsync("Упс!", "Не удалось открыть ссылку. Похоже, у вас в системе отключен или отсутствует браузер.", "ОК");
         }
     }
     public async void TwitchButtonClicked(object sender, EventArgs e)
@@ -25,7 +25,7 @@ public partial class SecondPage : ContentPage
         }
         catch(Exception ex)
         {
-            await DisplayAlert("Упс!", "Не удалось открыть ссылку. Похоже, у вас в системе отключен или отсутствует браузер.", "ОК");
+            await DisplayAlertAsync("Упс!", "Не удалось открыть ссылку. Похоже, у вас в системе отключен или отсутствует браузер.", "ОК");
         }
     }
     public async void KickButtonClicked(object sender, EventArgs e)
@@ -36,7 +36,7 @@ public partial class SecondPage : ContentPage
         }
         catch(Exception ex)
         {
-            await DisplayAlert("Упс!", "Не удалось открыть ссылку. Похоже, у вас в системе отключен или отсутствует браузер.", "ОК");
+            await DisplayAlertAsync("Упс!", "Не удалось открыть ссылку. Похоже, у вас в системе отключен или отсутствует браузер.", "ОК");
         }
     }
     public async void GitHubButtonClicked(object sender, EventArgs e)
@@ -47,7 +47,7 @@ public partial class SecondPage : ContentPage
         }
         catch(Exception ex)
         {
-            await DisplayAlert("Упс!", "Не удалось открыть ссылку. Похоже, у вас в системе отключен или отсутствует браузер.", "ОК");
+            await DisplayAlertAsync("Упс!", "Не удалось открыть ссылку. Похоже, у вас в системе отключен или отсутствует браузер.", "ОК");
         }
     }
 }

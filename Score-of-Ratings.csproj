@@ -35,8 +35,8 @@
 		<ApplicationId>com.tuzman.scoreofratings</ApplicationId>
 		<AssemblyName>ScoreOfRatings</AssemblyName>
 		<!-- Versions -->
-		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
-		<ApplicationVersion>1</ApplicationVersion>
+		<ApplicationDisplayVersion>1.0.1</ApplicationDisplayVersion>
+		<ApplicationVersion>2</ApplicationVersion>
         <RuntimeIdentifiers>android-arm;android-arm64</RuntimeIdentifiers>
 
 		<!-- To develop, package, and publish an app to the Microsoft Store, see: https://aka.ms/MauiTemplateUnpackaged -->
