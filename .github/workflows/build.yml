@@ -3,8 +3,8 @@ name: Build Android APK
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
+  release:
+    types: [ published ]
 
 jobs:
   build:
@@ -29,3 +29,19 @@ jobs:
       run: |
         chmod +x ./build.sh
         ./build.sh
+
+    # Шаг 1: Сохраняем APK в Артефакты сборки (чтобы на странице Actions появился блок скачивания)
+    - name: Upload APK Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: ScoreOfRatings-APK
+        path: bin/Release/net10.0-android/*-Signed.apk
+
+    # Шаг 2: Если билд запущен публикацией релиза на GitHub, прикрепляем APK прямо в Assets релиза
+    - name: Upload APK to Release Assets
+      uses: softprops/action-gh-release@v2
+      if: github.event_name == 'release'
+      with:
+        files: bin/Release/net10.0-android/*-Signed.apk
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
