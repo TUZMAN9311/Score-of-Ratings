@@ -7,11 +7,19 @@
     Title="ScoreOfRatings">
 
     <ShellContent
-        Title="Главная"
+        Title="5 бальная система"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
     <ShellContent
-        Title="Контакты"
+        Title="10 бальная система"
         ContentTemplate="{DataTemplate local:SecondPage}"
-        Route="SecondPage"/>
+        Route="SecondPage" />
+    <ShellContent
+        Title="12 бальная система"
+        ContentTemplate="{DataTemplate local:ThirdPage}"
+        Route="ThirdPage" />
+    <ShellContent
+        Title="Контакты"
+        ContentTemplate="{DataTemplate local:ContactPage}"
+        Route="ContactPage"/>
 </Shell>

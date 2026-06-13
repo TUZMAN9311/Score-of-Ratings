@@ -1,15 +1,18 @@
 namespace ScoreOfRatings;
 
-public partial class SecondPage : ContentPage
+public partial class ThirdPage : ContentPage
 {
-    public SecondPage()
+    public ThirdPage()
     {
         InitializeComponent();
     }
+    
     public void OnMyButtonClick(object sender, EventArgs e)
 	{
 		Result3.Text = "";
-		string g10 = grade10.Text;
+		string g12 = grade12.Text;
+        string g11 = grade11.Text;
+        string g10 = grade10.Text;
         string g9 = grade9.Text;
         string g8 = grade8.Text;
         string g7 = grade7.Text;
@@ -19,6 +22,8 @@ public partial class SecondPage : ContentPage
 		string g3 = grade3.Text;
 		string g2 = grade2.Text;
 		string g1 = grade1.Text;
+        double input12;
+        double input11;
         double input10;
         double input9;
         double input8;
@@ -29,6 +34,8 @@ public partial class SecondPage : ContentPage
 		double input3;
 		double input2;
 		double input1;
+        double.TryParse(g12, out input12);
+        double.TryParse(g11, out input11);
 		double.TryParse(g10, out input10);
 		double.TryParse(g9, out input9);
 		double.TryParse(g8, out input8);
@@ -39,14 +46,14 @@ public partial class SecondPage : ContentPage
 		double.TryParse(g3, out input3);
 		double.TryParse(g2, out input2);
 		double.TryParse(g1, out input1);
-		double test = input1 + input2 + input3 + input4 + input5 + input6 + input7 + input8 + input9 + input10;
+		double test = input1 + input2 + input3 + input4 + input5 + input6 + input7 + input8 + input9 + input10 + input11 + input12;
 		if(test == 0)
 		{
 			Result2.Text = "Вы не ввели ни одной оценки";
 		}
 		else
 		{
-			double result = (10*input10 + 9*input9 + 8*input8 + 7*input7 + 6*input6 + 5*input5 + 4*input4 + 3*input3 + 2*input2 + 1*input1) / test;
+			double result = (12*input12 + 11*input11 + 10*input10 + 9*input9 + 8*input8 + 7*input7 + 6*input6 + 5*input5 + 4*input4 + 3*input3 + 2*input2 + 1*input1) / test;
 			double result2 = Math.Round(result, 2);
         	string strResult = Convert.ToString(result2);
         	Result2.Text = $"Ваш средний балл: {strResult}";
@@ -126,10 +133,26 @@ public partial class SecondPage : ContentPage
 			{
 				Result3.Text = "У вас спорная между 9 и 10 :)";
 			}
-			else if(result2 > 9.5)
+			else if(result2 > 9.5 && result2 < 10.5)
 			{
 				Result3.Text = "У вас выходит оценка 10 :)";
 			}
+            else if(result2 == 10.5)
+			{
+				Result3.Text = "У вас спорная между 10 и 11 :)";
+			}
+			else if(result2 > 10.5 && result2 < 11.5)
+			{
+				Result3.Text = "У вас выходит оценка 11 :)";
+			}
+            else if(result2 == 11.5)
+			{
+				Result3.Text = "У вас спорная между 11 и 12 :)";
+			}
+			else if(result2 > 11.5)
+			{
+				Result3.Text = "У вас выходит оценка 12 :)";
+			}
 		}
-	}
+    }
 }
